@@ -28,6 +28,9 @@ public double calcularCircunferencia (){
         return circunferencia;
 }
 
+public void radio (){
+    System.out.println( radio + " es la mitad de la medida de la distancia a través del centro de un círculo");
+}
 
 
 }
