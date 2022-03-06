@@ -39,24 +39,24 @@ public class Circulo {
     }
 
 
-    public void  calcularArea (){
-        area = (Math.pow(radio,2))*3.1416;
-        System.out.println(area);
+    public void calcularArea() {
+        area = (Math.pow(radio, 2)) * 3.1416;
+        System.out.println("Area es igual a: " + area);
     }
-    public void calcularDiametro (){
-        diametro = radio*2;
-        System.out.println(diametro);
+
+    public void calcularDiametro() {
+        diametro = radio * 2;
+        System.out.println("Diametro es igual a: " + diametro);
     }
-    public void calcularCircunferencia (){
-        circunferencia = diametro*3.1416;
-        System.out.println(circunferencia);
+
+    public void calcularCircunferencia() {
+        circunferencia = diametro * 3.1416;
+        System.out.println("El calculo de su Circunferencia es de: " + circunferencia);
+        System.out.println();
+    }
+
+    public void radio() {
+        System.out.println(radio + " es la mitad de la medida de la distancia a través del centro de un círculo");
+    }
 }
 
-public void radio (){
-    System.out.println( radio + " es la mitad de la medida de la distancia a través del centro de un círculo");
-}
- public Circulo(){
-     System.out.println("Calculos");
- }
-
-}
