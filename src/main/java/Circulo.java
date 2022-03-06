@@ -1,5 +1,35 @@
 public class Circulo {
-    public double radio;
+    private double radio;
+    private double area;
+    private double diametro;
+    private double circunferencia;
+
+
+    public double getCircunferencia() {
+        return circunferencia;
+    }
+
+    public void setCircunferencia(double circunferencia) {
+        this.circunferencia = circunferencia;
+    }
+
+    public double getArea() {
+        return area;
+    }
+
+    public double getDiametro() {
+        return diametro;
+    }
+
+
+    public void setArea(double area) {
+        this.area = area;
+    }
+
+    public void setDiametro(double diametro) {
+        this.diametro = diametro;
+    }
+
     public double getRadio() {
         return radio;
     }
@@ -9,28 +39,24 @@ public class Circulo {
     }
 
 
-    public double calcularArea (){
-        double area;
+    public void  calcularArea (){
         area = (Math.pow(radio,2))*3.1416;
-
-        return area;
+        System.out.println(area);
     }
-    public double calcularDiametro (){
-        double diametro;
+    public void calcularDiametro (){
         diametro = radio*2;
-
-        return diametro;
+        System.out.println(diametro);
     }
-public double calcularCircunferencia (){
-        double circunferencia;
-        circunferencia = calcularDiametro()*3.1416;
-
-        return circunferencia;
+    public void calcularCircunferencia (){
+        circunferencia = diametro*3.1416;
+        System.out.println(circunferencia);
 }
 
 public void radio (){
     System.out.println( radio + " es la mitad de la medida de la distancia a través del centro de un círculo");
 }
-
+ public Circulo(){
+     System.out.println("Calculos");
+ }
 
 }
